@@ -1,0 +1,105 @@
+[
+    
+        {
+            "id": 1,
+            "title": "Sayma ve Olasılık",
+            "url": "10-sinif-matematik/sayma-ve-olasilik",
+            "aciklama": "Matematikte temel kavramları tanımlayan birim. Rakamlar, sayılar, operatörler ve matematiksel ilişkileri içerir."
+        },
+        {
+            "id": 2,
+            "title": "Sayı Basamakları",
+            "url": "http://www.example.com/sayi-basamaklari",
+            "img": "https://firebasestorage.googleapis.com/v0/b/venus-103.appspot.com/o/%C3%BCnite%20-%20say%C4%B1%20basamaklar%C4%B1.png?alt=media&token=48a42b7e-bbad-437d-91ac-ca4ef934c426",
+            "aciklama": "Sayıları oluşturan basamakların tanımlandığı konu. İki farklı sayı arasındaki temel matematiksel ilişkileri kapsar."
+        },
+        {
+            "id": 3,
+            "title": "Bölme ve Bölünebilme",
+            "url": "http://www.example.com/bolme-ve-bolunebilme",
+            "aciklama": "Bölme işlemi ve bölünebilme kurallarının incelendiği matematik konusu. Sayıların birbirine bölünmesi ve bu işlem sonucu elde edilen kalanlar üzerine odaklanır."
+        },
+        {
+            "id": 4,
+            "title": "EBOB – EKOK",
+            "url": "http://www.example.com/ebob-ekok",
+            "aciklama": "En Büyük Ortak Bölen (EBOB) ve En Küçük Ortak Kat (EKOK) kavramlarının tanımlandığı matematik konusu. Birden fazla sayının böldüğü veya katları olduğu en küçük veya en büyük sayıları belirlemeye yönelik teknikleri içerir."
+        },
+        {
+            "id": 5,
+            "title": "Rasyonel Sayılar",
+            "url": "http://www.example.com/rasyonel-sayilar",
+            "img": "https://firebasestorage.googleapis.com/v0/b/venus-103.appspot.com/o/%C3%BCnite%20-%20rasyonel%20say%C4%B1lar.png?alt=media&token=4afd26c0-9766-4be2-9fc1-fda0e2da4802",
+            "aciklama": "Rasyonel sayıların tanımlandığı ve özelliklerinin incelendiği matematik konusu. Kesirler, ondalık kesirler ve rasyonel sayılar arasındaki ilişkileri kapsar."
+        },
+        {
+            "id": 6,
+            "title": "Basit Eşitsizlikler",
+            "url": "http://www.example.com/basit-esitsizlikler",
+            "aciklama": "İki matematiksel ifadenin eşit olmadığını belirten durumları inceleyen konu. İki sayının karşılaştırılması ve bu sayıların farklı olma durumları üzerine odaklanır."
+        },
+        {
+            "id": 7,
+            "title": "Mutlak Değer",
+            "url": "http://www.example.com/mutlak-deger",
+            "aciklama": "Mutlak değer kavramının tanımlandığı ve mutlak değer problemlerinin incelendiği matematik konusu. Bir sayının mutlak değeri, o sayının sıfırdan farklı olması durumunda pozitif, negatif veya sıfır olabilecek mesafesini ifade eder."
+        },
+        {
+            "id": 8,
+            "title": "Üslü Sayılar",
+            "url": "http://www.example.com/uslu-sayilar",
+            "img": "https://firebasestorage.googleapis.com/v0/b/venus-103.appspot.com/o/%C3%BCnite-%20%C3%BCsl%C3%BC%20ifadeler.png?alt=media&token=d4d79dec-fa8d-4643-96f4-eedc4695378e",
+            "aciklama": "Üs kavramının tanımlandığı ve üslü sayıların incelendiği matematik konusu. Bir sayının üsleri, bu sayının kendisiyle çarpılacak sayıları ifade eder. Üslü sayılarla ilgili temel kurallar ve özellikler bu konuda incelenir."
+        },
+    
+    
+        {
+            "id": 9,
+            "title": "Köklü Sayılar",
+            "url": "http://www.example.com/koklu-sayilar",
+            "aciklama": "Matematikte, sayıların köklerinin ve köklü ifadelerin incelendiği bir konu. Bir sayının karekökü veya küpkökü gibi köklü ifadelerin hesaplanması ve özellikleri bu konuda ele alınır."
+        },
+        {
+            "id": 10,
+            "title": "Çarpanlara Ayırma",
+            "url": "http://www.example.com/carpanlara-ayirma",
+            "aciklama": "Bir sayının, çarpanlarına ayrılması işleminin incelendiği matematik konusu. Bir sayının asal çarpanlarına ayrılması ve bu çarpanların özellikleri bu konuda ele alınır."
+        },
+        {
+            "id": 11,
+            "title": "Oran Orantı",
+            "url": "http://www.example.com/oran-oranti",
+            "aciklama": "Matematiksel ilişkilerin oranlarla ifade edildiği ve bu orantıların incelendiği bir konu. İki veya daha fazla sayının arasındaki oranın doğru veya ters orantı olup olmadığı ve bu oranların nasıl hesaplanacağı bu konuda ele alınır."
+        },
+        {
+            "id": 12,
+            "title": "Denklem Çözme",
+            "url": "http://www.example.com/denklem-cozme",
+            "aciklama": "Bir matematiksel denklemin bilinmeyenlerini bulma işleminin incelendiği konu. Lineer denklemler, ikinci dereceden denklemler ve üçüncü dereceden denklemler gibi farklı türdeki denklemlerin çözüm teknikleri bu konuda ele alınır."
+        },
+        {
+            "id": 13,
+            "title": "Problemler",
+            "url": "http://www.example.com/problemler",
+            "aciklama": "Gerçek hayattan alınmış matematik problemlerinin çözüm tekniklerinin incelendiği konu. Problemlerin metinsel ifadelerinin matematiksel denklemlere dönüştürülmesi ve çözüm adımlarının uygulanması bu konuda ele alınır."
+        },
+        {
+            "id": 14,
+            "title": "Kümeler",
+            "url": "http://www.example.com/kumeler",
+            "aciklama": "Elemanları benzer özelliklere sahip nesnelerin toplandığı matematiksel yapıların incelendiği bir konu. Kümelerin tanımı, alt kümeleri, birleşim ve kesişim operasyonları bu konuda ele alınır."
+        },
+        {
+            "id": 15,
+            "title": "Mantık",
+            "url": "http://localhost:3000/kurslar/9-sinif/mantik",
+            "aciklama": "Mantık ve akıl yürütme ilkelerinin incelendiği matematiksel bir disiplin. Doğru ve yanlış ifadelerin değerlendirilmesi ve önermelerin doğruluğunun belirlenmesi bu konuda ele alınır."
+        },
+        {
+            "id": 16,
+            "title": "Fonksiyonlar",
+            "url": "http://www.example.com/fonksiyonlar",
+            "aciklama": "Matematiksel ilişkilerin birbirleri arasındaki bağlantılarının tanımlandığı ve incelendiği bir konu. Fonksiyonların grafikleri, sınırları, türevleri ve integrali bu konuda ele alınır."
+        }
+   
+]
