@@ -4,7 +4,7 @@ import { signOut } from "firebase/auth";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import "../style/global/index.css"
+import "../style/global/index.css";
 
 import { TriangleDown } from "@styled-icons/entypo/TriangleDown";
 import { TriangleUp } from "@styled-icons/entypo/TriangleUp";
@@ -47,83 +47,82 @@ function Navbar() {
     signOut(auth);
   }, []);
   return (
-    <NavBarContainer>
-      <NavigationBar>
-        <Nav>
-          <LogoHam>
-            <Logo href={isLoggedIn ? "/destek-ol" : "/"}>venüs eğitim</Logo>
-            <Hamburger
-              onClick={() => {
-                setIsOpen(!isOpen);
-                setUndisplay(false);
-              }}
-            >
-              <Span1 isOpen={isOpen} />
-              <Span2 isOpen={isOpen} />
-              <Span3 isOpen={isOpen} />
-            </Hamburger>
-          </LogoHam>
+    <Header>
+      <Nav>
+        <LogoHam>
+          <Logo href={isLoggedIn ? "/ogrenci-ekrani" : "/"}>venüs eğitim</Logo>
+          <Hamburger
+            onClick={() => {
+              setIsOpen(!isOpen);
+              setUndisplay(false);
+            }}
+          >
+            <Span1 isOpen={isOpen} />
+            <Span2 isOpen={isOpen} />
+            <Span3 isOpen={isOpen} />
+          </Hamburger>
+        </LogoHam>
+        <Menu isOpen={isOpen}>
+          <SearchBar>
+            <Courses onClick={() => setUndisplay(!undisplay)}>
+              Kurslar
+              <TersUcgen undisplay={undisplay} />
+              <DuzUcgen undisplay={undisplay} />
+            </Courses>
+            <SearchForm onSubmit={handleFormSubmit}>
+              <input
+                placeholder="Kursun ismini giriniz..."
+                type="text"
+                value={searchTerm}
+                onChange={handleChange}
+              />
+              <button type="submit">
+                <SearchIcon />
+              </button>
+            </SearchForm>
+          </SearchBar>
 
-          <Menu isOpen={isOpen}>
-            <SearchBar>
-              <Courses onClick={() => setUndisplay(!undisplay)}>
-                Kurslar
-                <TersUcgen undisplay={undisplay} />
-                <DuzUcgen undisplay={undisplay} />
-              </Courses>
-              <SearchForm onSubmit={handleFormSubmit}>
-                <input
-                  placeholder="Kursun ismini giriniz..."
-                  type="text"
-                  value={searchTerm}
-                  onChange={handleChange}
-                />
-                <button type="submit">
-                  <SearchIcon />
-                </button>
-              </SearchForm>
-            </SearchBar>
-
-            {!isLoggedIn && (
-              <Buttons>
-                <Link to="/giris-yap">
-                  <MenuLink>Giriş Yap</MenuLink>
-                </Link>
-                <Link to="/kayit-ol">
-                  <MenuLink>Kayıt Ol</MenuLink>
-                </Link>
-                <Link to="/destek-ol">
-                  <MenuLink>Destek Ol</MenuLink>
-                </Link>
-              </Buttons>
-            )}
-            {isLoggedIn && (
-              <Buttons>
-                <Link to="/bildirimler" style={{ position: "relative" }}>
-                  <MenuLink>Bildirimler</MenuLink>
-                  <Circle></Circle>
-                </Link>
-                <Link to="/ayarlar">
-                  <MenuLink>Ayarlar</MenuLink>
-                </Link>
-                <Link to="/">
-                  <MenuLinkExit onClick={() => handleSignOut()}>Çıkış Yap</MenuLinkExit>
-                </Link>
-              </Buttons>
-            )}
-          </Menu>
-        </Nav>
-      </NavigationBar>
-      <DropdownMenuContainer undisplay={undisplay}>
-        <DropdownMenu />
+          {!isLoggedIn && (
+            <Buttons>
+              <Link to="/giris-yap">
+                <MenuLink>Giriş Yap</MenuLink>
+              </Link>
+              <Link to="/kayit-ol">
+                <MenuLink>Kayıt Ol</MenuLink>
+              </Link>
+              <Link to="/destek-ol">
+                <MenuLink>Destek Ol</MenuLink>
+              </Link>
+            </Buttons>
+          )}
+          {isLoggedIn && (
+            <Buttons>
+              <Link to="/bildirimlerim" style={{ position: "relative" }}>
+                <MenuLink>Bildirimler</MenuLink>
+                <Circle></Circle>
+              </Link>
+              <Link to="/ayarlar">
+                <MenuLink>Ayarlar</MenuLink>
+              </Link>
+              <Link to="/">
+                <MenuLinkExit onClick={() => handleSignOut()}>
+                  Çıkış Yap
+                </MenuLinkExit>
+              </Link>
+            </Buttons>
+          )}
+        </Menu>
+      </Nav>
+      <DropdownMenuContainer undisplay={undisplay}  onClick={() => setUndisplay(false)}>
+        <DropdownMenu/>
       </DropdownMenuContainer>
-    </NavBarContainer>
+    </Header>
   );
-};
+}
 
-const NavBarContainer = styled.div`
+const Header = styled.header`
   background-color: var(--third-color);
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,34 +130,26 @@ const NavBarContainer = styled.div`
 `;
 const DropdownMenuContainer = styled.div`
   display: ${({ undisplay }) => (undisplay ? "flex" : "none")};
-  max-width: 1440px;
+  max-width: var(--main-width);
   align-items: center;
-`;
-
-const NavigationBar = styled.div`
-  width: 100%;
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: 768px) {
-    height: 100px;
-  }
+  justify-content: center;
+  width: 96%;
+  margin-bottom: 30px;
 `;
 
 const Nav = styled.div`
-  width: 100%;
-  background-color: var(--third-color);
-  margin: 0 3rem;
+  width: 96%;
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   overflow-y: hidden;
   justify-content: space-between;
+  max-width: var(--main-width);
+  margin: 20px 10px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 0 0.4rem 0 1rem;
   }
 `;
 
@@ -168,6 +159,7 @@ const LogoHam = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
   }
 `;
 const Hamburger = styled.div`
@@ -181,6 +173,7 @@ const Hamburger = styled.div`
   @media (max-width: 768px) {
     display: flex;
     width: ${({ isOpen }) => (isOpen ? "100%" : "50px")};
+    align-items: end;
   }
 `;
 
@@ -188,9 +181,15 @@ const SearchBar = styled.div`
   padding: 0.3rem 1rem;
   display: flex;
   justify-content: center;
-  margin-right: clamp(1rem, 1vw, 6rem);
-  max-width: 100%;
+  margin: 0px 20px;
   flex: 1;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0.3rem 0rem;
+  }
+
+
 `;
 
 const SearchForm = styled.form`
@@ -200,15 +199,15 @@ const SearchForm = styled.form`
   align-items: center;
   justify-content: space-around;
   flex: 1;
-  padding-right: 1rem;
 
   input {
     flex: 1;
     background-color: transparent;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1rem;
     border: none;
     outline: none;
     box-shadow: none;
+    font-family: 'MyCustomFont', sans-serif;
 
     ::placeholder {
       font-size: 0.9rem;
@@ -237,10 +236,11 @@ const Courses = styled.button`
   border: none;
   background-color: transparent;
   color: var(--main-color);
-  font-family: "Poetsen One", sans-serif;
   font-style: normal;
   font-size: 18px;
   width: 120px;
+  font-family: "MyCustomFont", sans-serif;
+  height: 40px;
 
   a {
     font-size: 1.1rem;
@@ -263,7 +263,7 @@ const TersUcgen = styled(TriangleDown)`
   display: ${({ undisplay }) => (undisplay ? "none" : "flex")};
 
   @media (max-width: 768px) {
-    margin-right: 0.2rem;
+    margin-right: 0rem;
   }
 `;
 const DuzUcgen = styled(TriangleUp)`
@@ -274,7 +274,7 @@ const DuzUcgen = styled(TriangleUp)`
   margin-bottom: -0.1rem;
 
   @media (max-width: 768px) {
-    margin-right: 0.2rem;
+    margin-right: 0rem;
   }
 `;
 
@@ -287,8 +287,8 @@ const Logo = styled.a`
   font-size: 2.5rem;
   color: var(--main-color);
   text-decoration: none;
-  font-family: "Poetsen One", sans-serif;
-  font-style: normal;
+  font-family: "MyCustomFont", sans-serif;
+  font-weight: bold;
 `;
 const Menu = styled.div`
   display: flex;
@@ -326,9 +326,7 @@ const MenuLink = styled.button`
   text-align: center;
   color: #efecf3;
   padding: 0.6rem 0rem;
-  @import url("https://fonts.cdnfonts.com/css/poetsen-one");
-  font-family: "Poetsen One", sans-serif;
-  font-style: normal;
+  font-family: "MyCustomFont", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   margin-right: 0.7rem;
@@ -347,7 +345,6 @@ const MenuLink = styled.button`
     margin-bottom: 0.5rem;
 
     &:hover {
-      
       border: 0.1rem solid var(--main-color);
       padding: 0.5rem 0rem;
     }
@@ -361,10 +358,7 @@ const MenuLinkExit = styled.button`
   text-align: center;
   color: #efecf3;
   padding: 0.6rem 0rem;
-  @import url("https://fonts.cdnfonts.com/css/poetsen-one");
-  font-family: "Poetsen One", sans-serif;
-  font-style: normal;
-  font-weight: 300;
+  font-family: 'MyCustomFont', sans-serif;
   font-size: 1rem;
   margin-right: 0.7rem;
 
@@ -428,5 +422,3 @@ const Circle = styled(IoNotifications)`
 `;
 
 export default Navbar;
-
-

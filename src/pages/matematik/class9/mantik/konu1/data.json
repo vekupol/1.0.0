@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "topicNo": 1,
+      "topicName": "Konu 1",
+      "parts": [
+        {
+          "title": "Part 1",
+          "description": "Merhaba adamım.Merhaba adamım.Merhaba adamım.Merhaba adamım.Merhaba adamım.Merhaba adamım",
+          "icon": "V"
+        },
+        {
+          "title": "Part 2",
+          "description": "bye bye bebek",
+          "icon": "A"
+        },
+        {
+          "title": "Part 3",
+          "description": "Açıklama 3",
+          "icon": "E"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "topicNo": 2,
+      "topicName": "Önerme Nedir?",
+      "parts": [
+        {
+          "title": "Part 4",
+          "description": "Açıklama 4",
+          "icon": "V"
+        },
+        {
+          "title": "Part 5",
+          "description": "Açıklama 5",
+          "icon": "A"
+        },
+        {
+          "title": "Part 6",
+          "description": "Açıklama 6",
+          "icon": "E"
+        }
+      ]
+    }
+   
+  ]
+  

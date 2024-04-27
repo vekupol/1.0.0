@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "soru" : "Aşağıdakilerden hangisi bir önermedir?",
+        "aciklama" : "Doğru olan bir şıkkı işaretleyin.",
+        "A" : "Türkiye ve Kanada bir kıtadır.",
+        "B" : "Ben çok kötümserim",
+        "C" : "camiryu",
+        "D" : "ah sana vah sana",
+        "dogruCevap" : "A",
+        "Ayanlis":"çünkü iyimserim",
+        "Byanlis":"",
+        "Cyanlis":"ne demek camiryu",
+        "Dyanlis":"pembe mezarlık",
+        "puan" : 25
+    },
+    {
+        "id": 2,
+        "soru" : "Aşağıdakilerden hangisi bir önerme değildir?",
+        "aciklama" : "Doğru olan bir şıkkı işaretleyin.",
+        "A" : "Türkiye ve Kanada bir kıtadır.",
+        "B" : "Ben çok kötümserim",
+        "C" : "camiryu",
+        "D" : "ah sana vah sana",
+        "dogruCevap" : "B",
+        "Ayanlis":"çünkü iyimserim",
+        "Byanlis":"",
+        "Cyanlis":"ne demek camiryu",
+        "Dyanlis":"pembe mezarlık",
+        "puan" : 25
+    },
+    {
+        "id": 3,
+        "soru" : "Aşağıdakilerden hangisi ",
+        "aciklama" : "Doğru olan bir şıkkı işaretleyin.",
+        "A" : "Türkiye ve Kanada bir kıtadır.",
+        "B" : "Ben çok kötümserim",
+        "C" : "camiryu",
+        "D" : "ah sana vah sana",
+        "dogruCevap" : "C",
+        "A!":"çünkü iyimserim",
+        "B!":"ne demek camiryu",
+        "C!":"",
+        "D!":"pembe mezarlık",
+        "puan" : 25
+        
+    },
+    {
+        "id": 4,
+        "soru" : "Aşağıdakilerden hangisi ",
+        "aciklama" : "Doğru olan bir şıkkı işaretleyin.",
+        "A" : "Türkiye ve Kanada bir kıtadır.",
+        "B" : "Ben çok kötümserim",
+        "C" : "camiryu",
+        "D" : "ah sana vah sana",
+        "dogruCevap" : "D",
+        "A!":"çünkü iyimserim",
+        "B!":"ne demek camiryu",
+        "C!":"",
+        "D!":"pembe mezarlık",
+        "puan" : 25
+    }
+]

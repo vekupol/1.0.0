@@ -39,13 +39,11 @@
     --second-color: #C3ACD0;
     --third-color: #efecf3;
     --delete-color: #c4302b;
+
+    --main-width: 1272px !important;
+    --main-padding: 0px 24px !important;
   }
 
-
-
-  
-
-  
   
   
   code {
@@ -54,8 +52,8 @@
   }
   
   @font-face {
-    font-family: "PoetsonOne";
-    src: url("../../fonts/PoetsenOne-Regular.ttf");
+    font-family: 'MyCustomFont';
+    src: url('../../fonts/PoetsenOne-Regular.ttf') format('truetype');
   }
   
  /*

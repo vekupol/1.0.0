@@ -19,12 +19,12 @@ export function FooterContainer() {
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>Kurslarımız</Footer.Title>
-            <Footer.Link href="/ayt-matematik">AYT Matematik</Footer.Link>
-            <Footer.Link href="/tyt-matematik">TYT Matematik</Footer.Link>
-            <Footer.Link href="/12-sinif-matematik">12. Sınıf Matematik</Footer.Link>
-            <Footer.Link href="/11-sinif-matematik">11. Sınıf Matematik</Footer.Link>
-            <Footer.Link href="/10-sinif-matematik">10. Sınıf Matematik</Footer.Link>
-            <Footer.Link href="/9-sinif-matematik">9. Sınıf Matematik</Footer.Link>
+            <Footer.Link href="/matematik/ayt">AYT Matematik</Footer.Link>
+            <Footer.Link href="/matematik/tyt">TYT Matematik</Footer.Link>
+            <Footer.Link href="/matematik/12-sinif">12. Sınıf Matematik</Footer.Link>
+            <Footer.Link href="/matematik/11-sinif">11. Sınıf Matematik</Footer.Link>
+            <Footer.Link href="/matematik/10-sinif">10. Sınıf Matematik</Footer.Link>
+            <Footer.Link href="/matematik/9-sinif">9. Sınıf Matematik</Footer.Link>
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>İletişim</Footer.Title>
